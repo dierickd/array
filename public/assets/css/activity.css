@@ -1,0 +1,33 @@
+@import "app.css";
+
+body {
+    font-size: 1.5rem;
+}
+
+thead .head {
+    background-color: rgba(0, 0, 0, .3);
+}
+.title {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.header {
+    background-image: url("https://images.unsplash.com/photo-1505166065723-bae088a12fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    min-height: 900px;
+    background-image: url('/assets/images/paper.svg');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+}

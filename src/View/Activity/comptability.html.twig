@@ -1,0 +1,44 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+
+    <header class="header">
+        <h1>Comptabilité</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="row col-md-12 my-5 text-center">
+                {# liste des revenus #}
+                <table class="table">
+                    <thead class="text-center">
+                    <tr class="head">
+                        <th colspan="4"><h3>Total des ventes</h3></th>
+                    </tr>
+                    <tr class="title">
+                        <th>Bières</th>
+                        <th>Prix</th>
+                        <th>Quantité</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>bière 1</td>
+                        <td>70 €</td>
+                        <td>365</td>
+                        <td>x xxx,xx €</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block styleSheet %}
+    <link rel="stylesheet" href="/assets/css/activity.css">
+{% endblock %}

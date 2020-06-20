@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <header class="header">
+        <h1>Welcome home</h1>
+    </header>
+    <div class="container p-5">
+        <ul class="list">
+            <li class="my-3">
+                Le patron du bar Nolan Murphy, irlandais, reviens de vacances et souhaite faire le point de l'activité
+                pendant son absence.
+            </li>
+            <li class="my-3">
+                Pour cela tu devra lister à partir de la méthode <i>getClient</i> dans <i>src/Source/data.php</i> les
+                clients venus pendant
+                son absence.
+            </li>
+            <li class="my-3">
+                Nolan Murphy souhaite également connaitre la liste des bières qui ont été vendues ainsi que les
+                quantités par semaine, utilise pour cela la méthode <i>getQuantity</i>.
+            </li>
+            <li class="my-3">
+                Toujours avec la méthode <i>getQuantity</i>, comptabilise la totalité des ventes pour chaque bières
+                vendues
+            </li>
+            <li class="my-3">
+                Nolan est ravi, il a le nombre total des ventes mais il ne connait toujours pas les revenus générés.
+                Utilise la mèthode <i>getSold</i> pour informer Nolan de la totalité de ses ventes.
+            </li>
+
+        </ul>
+    </div>
+{% endblock %}
+
+{% block styleSheet %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+{% endblock %}

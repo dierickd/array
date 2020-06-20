@@ -1,0 +1,76 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+
+    <header class="header">
+        <h1>Activity</h1>
+    </header>
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-around">
+            {# liste des clients #}
+            <table class="table text-center col-md-3">
+                <thead>
+                <tr class="head">
+                    <th><h3>Liste des clients</h3></th>
+                </tr>
+                <tr class="title">
+                    <th>Nom</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Nom client</td>
+                </tr>
+                </tbody>
+            </table>
+
+            {# liste des ventes par semaine #}
+            <table class="table col-md-4">
+                <thead class="text-center">
+                <tr class="head">
+                    <th colspan="2"><h3>Liste des ventes</h3></th>
+                </tr>
+                <tr class="title">
+                    <th>Bières</th>
+                    <th>Quantité</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="title">
+                    <td colspan="2"><h4>Semaine 1</h4></td>
+                </tr>
+                <tr>
+                    <td>bière 1</td>
+                    <td>23</td>
+                </tr>
+                </tbody>
+            </table>
+
+            {# liste des ventes par biere #}
+            <table class="table col-md-4">
+                <thead class="text-center">
+                <tr class="head">
+                    <th colspan="2"><h3>Liste des ventes total par bière</h3></th>
+                </tr>
+                <tr class="title">
+                    <th>Bières</th>
+                    <th>Quantité</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>bière 1</td>
+                    <td>562</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block styleSheet %}
+    <link rel="stylesheet" href="/assets/css/activity.css">
+{% endblock %}
+
